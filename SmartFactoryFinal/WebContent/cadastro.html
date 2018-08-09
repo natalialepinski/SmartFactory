@@ -1,0 +1,34 @@
+<div>
+	<input type="submit" href="#collapse1" value="+" class="nav-toggle">
+	<!--<button href="#collapse1" class="nav-toggle" value="+"></button>-->
+</div>
+<center>
+	</br>
+	<h2>Cadastrar Forma de Pagamento</h2>
+</center>
+<div id="collapse1" style="display: none">
+
+	<p>
+	<div id="cima">
+		<form class="formFormaPgto" name="CadastroFormaPagto" action="#"
+			method="POST">
+
+				<label>Forma Pagamento:<font color="#FF0000">*</font>
+				</label> </br> </br> <input class="form-control" type="text"
+					name="descricaoFormaPagamento" id="descricaoFormaPagamento"
+					size="75" required="required"
+					onKeyUp="validar(this.value,'formaPgto')" /></br>
+				</br>
+
+				<h5>
+					Todos os campos com <font color="#FF0000">*</font> são obrigatórios
+				</h5>
+				<a href="javascript: abrir();"><input type="submit"
+					value="Cadastrar" class="green-sea-flat-button"></a> <input
+					type="reset" value="Limpar Campos" class="green-sea-flat-button">
+				<br />
+		</form>
+
+	</div>
+	<p>
+</div>

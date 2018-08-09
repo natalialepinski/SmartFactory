@@ -1,0 +1,51 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+.side-menu {
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 50px !important;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 60px;
+  background: #192231;
+  overflow-x: hidden;
+  transition: width .6s;
+}
+ul{
+	list-style-type: none;
+	padding-left: 0;	
+}
+.side-menu:hover {
+  width: 300px;
+}
+
+.side-menu li {
+  width: 300px;
+}
+
+.side-menu li span {
+  font-size: 1.6rem;
+  margin: 20px 30px 0 22px;
+}
+
+.side-menu li a {
+  display: block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #FFF;
+  height: 53px;
+}
+
+.side-menu li a:hover,
+#firstLi a {
+  background: #0f141d;
+}
+
+hr{
+	border: 1px solid #fff;
+	margin: 0 8%;
+}
+
+

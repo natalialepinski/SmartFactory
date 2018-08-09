@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+
+/* form */
+
+
+
+form {
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+}
+form input {
+  border: 0;
+  outline: 0;
+  padding: 6px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+.input {
+  font-size: 13.3333px;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  padding: 6px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 1em;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+.input a{
+  text-decoration: none;
+}
+
+#legendaCor{
+  color: #98878f;
+}
+
+#magenta{
+  background-color: #ff00ff;
+  max-width: 25%;
+  color: #ff00ff;
+}
+
+#branco{
+  background-color: #fff;
+  max-width: 25%;
+  color: #fff;
+}
+
+#azul{
+  background-color: #0000ff;
+  color: #0000ff;
+  max-width: 25%;
+}
+
+form .btn{
+  color: white;
+  background: #985e6d;
+  cursor: pointer;
+}
+form .btn:hover {
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 3%;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+#proximo{
+  width: 50%;
+}
+
+#cor{
+  margin-top: 15px;
+}

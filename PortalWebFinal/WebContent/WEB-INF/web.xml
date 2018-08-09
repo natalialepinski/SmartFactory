@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Portal_Web</display-name>
+  <welcome-file-list>
+    <welcome-file>login-registration.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/erro.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.jsp</location>
+  </error-page>
+  <filter>
+    <filter-name>Filtro</filter-name>
+    <filter-class>br.com.portal.filter.Filtro</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filtro</filter-name>
+    <url-pattern>/cart.jsp</url-pattern>
+    <url-pattern>/servlet/ControleCarrinho</url-pattern>
+  </filter-mapping>
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+  <servlet>
+    <servlet-name>ControleCarrinho</servlet-name>
+    <servlet-class>br.com.portal.servlet.ControleCarrinho</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControleCarrinho</servlet-name>
+    <url-pattern>/servlet/ControleCarrinho</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ControleDescricao</servlet-name>
+    <servlet-class>br.com.portal.servlet.ControleDescricao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControleDescricao</servlet-name>
+    <url-pattern>/servlet/ControleDescricao</url-pattern>
+  </servlet-mapping>
+</web-app>

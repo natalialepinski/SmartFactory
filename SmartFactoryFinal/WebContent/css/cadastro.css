@@ -1,0 +1,85 @@
+ .round-border {
+    border: 1px solid #eee;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  #popupSair{
+    display:none;
+    background-color: #fff;
+    font-family: 'Ultra', sans-serif;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-150px;
+    margin-top:-100px;
+    padding:10px;
+    width:300px;
+    height:100px;
+    border:3px solid #000;
+  }
+  #botaopopup{
+    position: relative;;
+    vertical-align: top;
+    margin-left: 150px;
+    width: 20%;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #DAA520;
+    border: 0;
+    border-bottom: 2px solid #DAA520;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #DAA520;
+    box-shadow: inset 0 -2px #DAA520;
+  }
+  #botaopopupSim{
+    position: relative;;
+    vertical-align: top;
+    width: 20%;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #DAA520;
+    border: 0;
+    border-bottom: 2px solid #DAA520;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #DAA520;
+    box-shadow: inset 0 -2px #DAA520;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+    width: 120px;
+    top: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
